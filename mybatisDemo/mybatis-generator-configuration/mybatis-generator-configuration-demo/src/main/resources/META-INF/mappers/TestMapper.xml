@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.TestMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TestEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor>
+      <idArg column="id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="update_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="number" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="lifecycle" javaType="java.lang.String" jdbcType="CHAR" />
+      <arg column="dekes" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="description" javaType="java.lang.String" jdbcType="LONGVARCHAR" />
+    </constructor>
+  </resultMap>
+  
+	<!-- 查询所有test -->
+	<select id="getAllTest" resultType="com.example.entity.TestEntity">
+          SELECT * FROM test
+	</select>
+	
+  
+</mapper>
