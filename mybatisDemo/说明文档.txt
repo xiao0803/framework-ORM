@@ -6,5 +6,4 @@
 里面存放的是通过maven插件自动，根据DB表自动生成entity、mapper.xml、mapper接口文件；类似hibernate的反向工程。
 
 
-123
 
